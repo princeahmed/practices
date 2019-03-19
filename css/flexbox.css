@@ -1,0 +1,22 @@
+/**
+*Flex box Navigation menu
+*/
+nav{
+    background: grey;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.nav>.nav-item{
+    padding: 10px 15px;
+}
+
+.nav>.nav-item > a {
+    color: #ffffff;
+    text-decoration: none;
+}
