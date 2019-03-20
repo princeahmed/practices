@@ -17,7 +17,7 @@
 ```css
 .nav{
     display: flex;
-    justify-content: center;
+    justify-content: center | space-between | space-around | space-evenly;
     align-items: center;
     list-style: none;
 }
@@ -31,3 +31,39 @@
     text-decoration: none;
 }
 ```
+
+#### Flexbox Grids
+----------
+```
+    /**
+   *Flexbox Grids
+   */
+   
+   .container{
+       width: 1200px;
+       margin: 0 auto;
+       background: greenyellow;
+   }
+   
+   .columns{
+       display: flex;
+       flex-wrap: wrap;
+   }
+   
+   .column{
+       flex: 1; /*For evenly spaced*/
+       flex: none; /*For apply width of children (parent{flex-wrap:wrap})*/
+   }
+   
+   .col-6{
+       width: 50%;
+   }
+   .col-12{
+       width: 100%;
+   }
+   
+   .box{
+       padding: 20px;
+       border: 1px solid #ddd;
+   }
+   ```

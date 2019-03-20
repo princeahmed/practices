@@ -20,3 +20,35 @@ nav{
     color: #ffffff;
     text-decoration: none;
 }
+
+/**
+*Flexbox Grids
+*/
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    background: greenyellow;
+}
+
+.columns{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column{
+    flex: 1; /*For evenly spaced*/
+    flex: none; /*For apply width of children (parent{flex-wrap:wrap})*/
+}
+
+.col-6{
+    width: 50%;
+}
+.col-12{
+    width: 100%;
+}
+
+.box{
+    padding: 20px;
+    border: 1px solid #ddd;
+}
