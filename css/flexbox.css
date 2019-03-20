@@ -1,7 +1,11 @@
 /**
 *Flex box Navigation menu
 */
-nav{
+
+
+.main-nav{
+    display: flex;
+    justify-content: space-between;
     background: grey;
 }
 
@@ -10,6 +14,16 @@ nav{
     justify-content: center;
     align-items: center;
     list-style: none;
+}
+
+@media screen and (max-width: 767px){
+    .main-nav {
+        display: block;
+    }
+    
+    .nav{
+        display: block;
+    }
 }
 
 .nav>.nav-item{

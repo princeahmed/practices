@@ -67,3 +67,35 @@
        border: 1px solid #ddd;
    }
    ```
+   
+   #### Flexbox Responsive Navigation
+   ------
+   ```css
+/**
+*Flex box Navigation menu
+*/
+
+
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    background: grey;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+@media screen and (max-width: 767px){
+    .main-nav {
+        display: block;
+    }
+    
+    .nav{
+        display: block;
+    }
+}
+```
